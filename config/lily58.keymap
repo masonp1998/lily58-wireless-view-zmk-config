@@ -16,7 +16,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <500>;
         };
 
         td: td {
@@ -24,6 +24,7 @@
             label = "tap-dance";
             #binding-cells = <0>;
             bindings = <&mo 2>;
+            tapping-term-ms = <500>;
         };
     };
 
