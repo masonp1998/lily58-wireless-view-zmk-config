@@ -24,7 +24,7 @@
             label = "tap-dance";
             #binding-cells = <0>;
             bindings = <&mo 1>;
-            tapping-term-ms = <800>;
+            tapping-term-ms = <1000>;
         };
     };
 
