@@ -44,7 +44,7 @@
 &ht GRAVE ESCAPE  &ht LS(NUMBER_1) N1  &ht LS(NUMBER_2) N2  &ht LS(NUMBER_3) N3  &ht LS(NUMBER_4) N4  &ht LS(N5) N5                                                                            &ht LS(N6) NUMBER_6  &ht LS(N7) N7  &ht LS(N8) N8        &ht LS(N9) N9       &ht LS(N0) N0           &kp GRAVE
 &kp TAB           &kp Q                &kp W                &kp E                &kp R                &kp T                                                                                    &kp Y                &kp U          &kp I                &kp O               &kp P                   &kp MINUS
 &kp LEFT_CONTROL  &kp A                &kp S                &kp D                &kp F                &kp G                                                                                    &kp H                &kp J          &kp K                &kp L               &ht LS(SEMI) SEMICOLON  &ht LS(SQT) SQT
-&kp LSHFT         &kp Z                &kp X                &ht LC(C) C          &ht LC(V) V          &kp B          &ht LS(LEFT_BRACKET) LEFT_BRACKET    &ht LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp N                &kp M          &ht LS(COMMA) COMMA  &ht LS(DOT) PERIOD  &ht LS(FSLH) QUESTION   &kp RSHFT
+&kp LSHFT         &kp Z                &kp X                &ht LC(C) C          &ht LC(V) V          &kp B          &ht LS(LEFT_BRACKET) LEFT_BRACKET    &ht LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp N                &kp M          &ht LS(COMMA) COMMA  &ht LS(DOT) PERIOD  &ht LS(FSLH) SLASH      &kp RSHFT
                                                             &kp LWIN             &kp LEFT_ALT         &td            &kp SPACE                            &kp RET                              &mo 1                &kp BSPC       &trans
             >;
 
