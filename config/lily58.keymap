@@ -23,8 +23,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "tap-dance";
             #binding-cells = <0>;
-            bindings = <&mo 2>;
-            tapping-term-ms = <500>;
+            bindings = <&mo 1>;
+            tapping-term-ms = <800>;
         };
     };
 
@@ -41,31 +41,11 @@
 
             display-name = "Base";
             bindings = <
-&ht TILDE ESCAPE    &ht LS(NUMBER_1) N1  &ht LS(NUMBER_2) N2  &ht LS(NUMBER_3) N3  &ht LS(NUMBER_4) N4  &ht LS(N5) N5                        &ht LS(N6) NUMBER_6  &ht LS(N7) N7  &ht LS(N8) N8  &ht LS(N9) N9  &ht LS(N0) N0  &kp GRAVE
-&kp TAB             &kp Q                &kp W                &kp E                &kp R                &kp T                                &kp Y                &kp U          &kp I          &kp O          &kp P          &kp MINUS
-&kp LCTRL           &kp A                &kp S                &kp D                &kp F                &kp G                                &kp H                &kp J          &kp K          &kp L          &kp SEMI       &ht LS(SQT) SQT
-&ht LSHFT CAPSLOCK  &kp Z                &kp X                &kp C                &kp V                &kp B          &none        &none    &kp N                &kp M          &kp COMMA      &kp DOT        &kp FSLH       &kp RSHFT
-                                                              &kp LWIN             &kp LEFT_ALT         &td            &kp SPACE    &kp RET  &mo 2                &kp BSPC       &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        lower_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
-            display-name = "Lower";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&ht GRAVE ESCAPE  &ht LS(NUMBER_1) N1  &ht LS(NUMBER_2) N2  &ht LS(NUMBER_3) N3  &ht LS(NUMBER_4) N4  &ht LS(N5) N5                                                                            &ht LS(N6) NUMBER_6  &ht LS(N7) N7  &ht LS(N8) N8        &ht LS(N9) N9       &ht LS(N0) N0           &kp GRAVE
+&kp TAB           &kp Q                &kp W                &kp E                &kp R                &kp T                                                                                    &kp Y                &kp U          &kp I                &kp O               &kp P                   &kp MINUS
+&kp LEFT_CONTROL  &kp A                &kp S                &kp D                &kp F                &kp G                                                                                    &kp H                &kp J          &kp K                &kp L               &ht LS(SEMI) SEMICOLON  &ht LS(SQT) SQT
+&kp LSHFT         &kp Z                &kp X                &ht LC(C) C          &ht LC(V) V          &kp B          &ht LS(LEFT_BRACKET) LEFT_BRACKET    &ht LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp N                &kp M          &ht LS(COMMA) COMMA  &ht LS(DOT) PERIOD  &ht LS(FSLH) QUESTION   &kp RSHFT
+                                                            &kp LWIN             &kp LEFT_ALT         &td            &kp SPACE                            &kp RET                              &mo 1                &kp BSPC       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -74,11 +54,11 @@
         layer_3 {
             display-name = "Raise";
             bindings = <
-&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                              &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                              &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7     &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &bt BT_CLR    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                                       &trans        &trans        &trans        &trans        &trans  &trans       &trans     &trans
+&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans       &trans     &trans     &trans    &trans     &trans
+&kp CAPSLOCK  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                              &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                              &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
+&kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &bt BT_CLR    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
+                                          &trans        &trans        &trans        &trans        &trans  &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
